@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>碼上全對｜頂級網頁設計學科評估系統</title>
+  <title>碼上有解 CodeSolv | AI 智慧前端評估學習系統</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +16,10 @@
   <div id="preloader" style="position: fixed; inset: 0; background: #0a0a0a; z-index: 99999; display: flex; flex-direction: column; align-items: center; justify-content: center; transform-origin: top center; user-select: none;">
     <div id="preloader-content" style="text-align: center; color: #ffffff;">
       <div style="font-size: 14px; letter-spacing: 4px; font-weight: 700; color: #94a3b8; margin-bottom: 12px; text-transform: uppercase;">
-        CODECORRECT 碼上全對
+        CODESOLV 碼上有解
       </div>
       <div style="font-size: 26px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 24px;">
-        網頁設計學科評估系統
+        AI 智慧前端評估學習系統
       </div>
       <div id="preloader-counter" style="font-size: 56px; font-weight: 800; font-family: 'SF Pro Display', -apple-system, sans-serif; font-variant-numeric: tabular-nums; background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
         0%
@@ -44,18 +44,16 @@
     <!-- 頂部跑馬燈通知 (流暢走馬燈自動播放) -->
     <div class="top-notice-bar">
       <div class="notice-marquee-track" id="portal-marquee-track">
-        <span>📢 115學年度新北市自主學習成果發表專案 · 網頁設計丙級智能題庫全面開放測試！ · 結合 AI 考官即時互動、弱點診斷雷達與 CodeCoin 實體文創激勵，讓證照複習一舉高分通關！ · 最新考題已發布至雲端資料庫 🚀</span>
+        <span>📢 【碼上有解 CodeSolv】全新升級！AI 助攻，Code 力全開！ · 整合 17300 網頁設計題庫、AI 三階段階梯提示 (Hint Ladder)、5 款互動小遊戲、極簡 CSS 自造工坊與教師出題後台！ 🚀</span>
       </div>
     </div>
 
     <!-- 品牌旗艦導航列 (含滾輪滾動監聽) -->
     <nav class="portal-nav" id="portal-navbar">
-      <div class="nav-brand">
-        <div class="brand-logo-circle">💎</div>
-        <div>
-          <span style="font-weight: 800; font-size: 20px; color: #0f172a; letter-spacing: -0.5px;">碼上全對</span>
-          <span class="nav-brand-badge">出版級數位評估系統</span>
-        </div>
+      <div class="nav-brand" style="display: flex; align-items: center; gap: 12px;">
+        <a href="#portal-view" style="display: flex; align-items: center; text-decoration: none;">
+          <img src="codesolv-logo-animated.svg" alt="CodeSolv 碼上有解" style="height: 52px; width: auto; max-width: 240px; display: block;" />
+        </a>
       </div>
       <ul class="portal-nav-links">
         <li><a href="#about-platform">平台簡介</a></li>
@@ -92,7 +90,7 @@
             <span class="line-mask"><span class="hero-line" style="color: #ea580c;">網頁設計丙級必勝題庫</span></span>
           </h1>
 
-          <p class="hero-desc">結合 AI 考官即時對戰、EthorX 認知五大情境題、弱點診斷雷達與 CodeCoin 實體文創激勵，讓證照複習不再枯燥無味，一舉高分通關！</p>
+          <p class="hero-desc">專為技術型高中量身打造：拒絕死背硬記，結合 AI 階梯提示 (Hint Ladder)、代碼顯像鏡、5 大趣味小遊戲、CSS 自造工坊與 17300 全科目題庫，讓每一行代碼都活起來！</p>
           <div class="banner-features">
             <span class="feature-tag">⭐ 604題完整學科</span>
             <span class="feature-tag">⭐ 5大題組術科攻略</span>
@@ -154,18 +152,14 @@
   <div id="arena-system-view" style="display: none;">
     <!-- 頂部冰透導航列：左側有「◂ 返回官網首頁」按鈕 -->
     <header class="app-header glass-panel">
-      <div class="logo-group">
-        <button class="metal-btn btn-rolling magnetic-target" onclick="backToPortal()" style="padding: 6px 14px; font-size: 12px; margin-right: 6px;" title="返回官方宣傳首頁">
+      <div class="logo-group" style="display: flex; align-items: center; gap: 10px;">
+        <button class="metal-btn btn-rolling magnetic-target" onclick="backToPortal()" style="padding: 6px 14px; font-size: 12px; margin-right: 6px;" title="返回官方首頁">
           <span class="rolling-text-track">
-            <span class="roll-layer">◂ 返回官網</span>
-            <span class="roll-layer">◂ 返回官網</span>
+            <span class="roll-layer">◂ 返回首頁</span>
+            <span class="roll-layer">◂ 返回首頁</span>
           </span>
         </button>
-        <div class="logo-badge">💎</div>
-        <div>
-          <div class="logo-title nowrap-single">碼上全對</div>
-          <div class="nowrap-single" style="font-size: 11px; color: var(--text-muted); font-weight: 500;">WEB DESIGN EVALUATION</div>
-        </div>
+        <img src="codesolv-logo-animated.svg" alt="CodeSolv 碼上有解" style="height: 42px; width: auto; display: block;" />
       </div>
 
       <nav class="nav-links">
@@ -528,6 +522,47 @@
 
           <!-- 題目選項矩陣 (雙列 2x2 Grid) -->
           <div id="q-options-container" class="options-grid-panoramic"></div>
+
+          <!-- CodeSolv 核心功能：【三階段 Hint Ladder 提示階梯】 -->
+          <div id="hint-ladder-container" style="margin-top: 24px; background: rgba(247, 244, 234, 0.85); border-radius: 16px; border: 1.5px solid rgba(155, 140, 255, 0.3); padding: 18px 24px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 20px;">✦</span>
+                <span style="font-size: 15px; font-weight: 800; color: #14213D;">AI 智慧階梯提示 (Hint Ladder)</span>
+                <span style="font-size: 11px; background: rgba(155, 140, 255, 0.2); color: #6D28D9; padding: 2px 8px; border-radius: 12px; font-weight: 700;">練習模式專屬</span>
+              </div>
+              <span id="hint-step-indicator" style="font-size: 12px; color: #64748B; font-weight: 600;">點擊下方按鈕解鎖階梯提示</span>
+            </div>
+            
+            <div style="display: flex; gap: 10px; margin-bottom: 14px; flex-wrap: wrap;">
+              <button class="metal-btn" id="btn-hint-1" onclick="unlockHintStep(1)" style="font-size: 13px;">階段 1：方向指引</button>
+              <button class="metal-btn" id="btn-hint-2" onclick="unlockHintStep(2)" style="font-size: 13px;" disabled>階段 2：生活化比喻</button>
+              <button class="metal-btn" id="btn-hint-3" onclick="unlockHintStep(3)" style="font-size: 13px;" disabled>階段 3：局部代碼示範</button>
+            </div>
+            
+            <div id="hint-content-display" style="font-size: 14px; color: #1e293b; line-height: 1.7; background: #fff; padding: 14px 18px; border-radius: 10px; border: 1px dashed #cbd5e1; display: none;"></div>
+          </div>
+
+          <!-- CodeSolv 核心功能：【AI 視覺化代碼顯像鏡 (Live Visual Code Inspector)】 -->
+          <div id="code-inspector-container" style="margin-top: 20px; background: #14213D; border-radius: 16px; padding: 20px 24px; color: #fff;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 20px;">🔍</span>
+                <span style="font-size: 15px; font-weight: 800; color: #47E6C1;">AI 視覺化代碼顯像鏡 (Live Code Inspector)</span>
+              </div>
+              <button class="metal-btn" onclick="toggleCodeInspectorSandbox()" style="padding: 4px 12px; font-size: 12px; background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(71, 230, 193, 0.4);">
+                切換即時沙盒渲染
+              </button>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div style="background: rgba(0,0,0,0.3); border-radius: 10px; padding: 12px; font-family: monospace; font-size: 12px; color: #9B8CFF; max-height: 140px; overflow-y: auto;" id="inspector-code-snippet">
+                &lt;!-- 正在解析當前題目的 HTML/CSS 核心結構... --&gt;
+              </div>
+              <div id="inspector-sandbox-view" style="background: #ffffff; border-radius: 10px; padding: 14px; color: #1e293b; display: flex; align-items: center; justify-content: center; min-height: 100px;">
+                <span style="font-size: 12px; color: #64748b;">即時顯像沙盒已就緒</span>
+              </div>
+            </div>
+          </div>
 
           <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 36px; border-top: 1px solid rgba(220, 230, 245, 0.6); padding-top: 24px;">
             <button class="metal-btn" onclick="prevQuestion()" id="btn-prev-q">上一題</button>
@@ -1061,6 +1096,300 @@
       </div>
     </section>
 
+  
+    <!-- ================= 區塊 11: 5 款解碼小遊戲 (Mini-Games Hub) ================= -->
+    <section id="view-games" style="display: none;">
+      <div style="margin-bottom: 28px; text-align: center;">
+        <span class="tag-pill web" style="background: rgba(16, 185, 129, 0.12); color: #059669; border-color: rgba(16, 185, 129, 0.3);">60FPS 原生互動微工坊</span>
+        <h2 style="font-size: 28px; font-weight: 800; margin: 8px 0; color: #14213D;">🎮 CodeSolv 前端解碼小遊戲</h2>
+        <p style="font-size: 14px; color: #64748B;">透過拖曳、微彈簧跳躍、代碼除錯與色彩調製，把 17300 網頁設計觀念化為直覺肌肉記憶！</p>
+      </div>
+
+      <!-- 小遊戲選擇分頁卡片 -->
+      <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 28px; flex-wrap: wrap;">
+        <button class="metal-btn primary" id="btn-game-1" onclick="switchMiniGame(1)">1. 標籤歸位大作戰 (HTML)</button>
+        <button class="metal-btn" id="btn-game-2" onclick="switchMiniGame(2)">2. Flex 彈簧跳跳跳 (CSS)</button>
+        <button class="metal-btn" id="btn-game-3" onclick="switchMiniGame(3)">3. 代碼拆彈專家 (Debug)</button>
+        <button class="metal-btn" id="btn-game-4" onclick="switchMiniGame(4)">4. 色彩煉金術師 (Color)</button>
+        <button class="metal-btn" id="btn-game-5" onclick="switchMiniGame(5)">5. 術科結構拼圖 (Layout)</button>
+      </div>
+
+      <!-- 遊戲一：標籤歸位大作戰 (HTML5 語意化拖曳) -->
+      <div id="game-stage-1" class="glass-panel" style="padding: 32px; max-width: 960px; margin: 0 auto;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <div>
+            <h3 style="font-size: 20px; font-weight: 700; color: #14213D;">🎯 遊戲 1：標籤歸位大作戰</h3>
+            <p style="font-size: 13px; color: #64748B;">將下方的 HTML5 語意化標籤，拖曳或點選放入上方正確的網頁結構槽位中！</p>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-size: 13px; color: #64748B;">得分</div>
+            <div id="game1-score" style="font-size: 26px; font-weight: 800; color: #10B981;">0 分</div>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+          <!-- 網頁結構槽位 -->
+          <div style="background: rgba(248, 250, 252, 0.85); border: 2px dashed #cbd5e1; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 12px;" id="game1-drop-targets">
+            <div class="game1-slot" data-expected="header" style="padding: 14px; border: 1.5px dashed #94a3b8; border-radius: 10px; text-align: center; font-size: 13px; color: #64748b; background: #fff;">
+              【網頁頁首與主標題區塊】➔ 放置目標
+            </div>
+            <div class="game1-slot" data-expected="nav" style="padding: 14px; border: 1.5px dashed #94a3b8; border-radius: 10px; text-align: center; font-size: 13px; color: #64748b; background: #fff;">
+              【網站導覽選單與超連結】➔ 放置目標
+            </div>
+            <div class="game1-slot" data-expected="main" style="padding: 14px; border: 1.5px dashed #94a3b8; border-radius: 10px; text-align: center; font-size: 13px; color: #64748b; background: #fff;">
+              【網頁核心主要內容區】➔ 放置目標
+            </div>
+            <div class="game1-slot" data-expected="footer" style="padding: 14px; border: 1.5px dashed #94a3b8; border-radius: 10px; text-align: center; font-size: 13px; color: #64748b; background: #fff;">
+              【頁尾版權與聯絡資訊】➔ 放置目標
+            </div>
+          </div>
+
+          <!-- 可拖曳標籤池 -->
+          <div>
+            <div style="font-size: 14px; font-weight: 700; margin-bottom: 12px; color: #14213D;">標籤池（請點選標籤後再點選左側槽位，或拖曳放入）：</div>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;" id="game1-tags-pool">
+              <div class="game1-tag-btn" onclick="selectGame1Tag(this, 'header')" draggable="true" style="padding: 12px 20px; background: #14213D; color: #fff; border-radius: 12px; font-family: monospace; font-size: 15px; font-weight: 700; cursor: grab;">&lt;header&gt;</div>
+              <div class="game1-tag-btn" onclick="selectGame1Tag(this, 'nav')" draggable="true" style="padding: 12px 20px; background: #0D9488; color: #fff; border-radius: 12px; font-family: monospace; font-size: 15px; font-weight: 700; cursor: grab;">&lt;nav&gt;</div>
+              <div class="game1-tag-btn" onclick="selectGame1Tag(this, 'main')" draggable="true" style="padding: 12px 20px; background: #8B5CF6; color: #fff; border-radius: 12px; font-family: monospace; font-size: 15px; font-weight: 700; cursor: grab;">&lt;main&gt;</div>
+              <div class="game1-tag-btn" onclick="selectGame1Tag(this, 'footer')" draggable="true" style="padding: 12px 20px; background: #FF795C; color: #fff; border-radius: 12px; font-family: monospace; font-size: 15px; font-weight: 700; cursor: grab;">&lt;footer&gt;</div>
+            </div>
+            <div id="game1-feedback" style="margin-top: 24px; font-size: 14px; font-weight: 700; color: #0D9488;"></div>
+            <button class="metal-btn primary" onclick="resetGame1()" style="margin-top: 16px;">重新開始這關</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 遊戲二：Flex 彈簧跳跳跳 -->
+      <div id="game-stage-2" class="glass-panel" style="display: none; padding: 32px; max-width: 960px; margin: 0 auto;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <div>
+            <h3 style="font-size: 20px; font-weight: 700; color: #14213D;">🐸 遊戲 2：Flex 彈簧跳跳跳</h3>
+            <p style="font-size: 13px; color: #64748B;">目標：點選右側的 CSS Flex 屬性，讓綠色小精靈精準跳躍到荷葉（黃金浮板）上！</p>
+          </div>
+          <div id="game2-status" style="font-size: 15px; font-weight: 700; color: #0D9488;">目標：靠右對齊 (flex-end)</div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 24px;">
+          <!-- 模擬湖面浮板區 -->
+          <div id="pond-container" style="height: 260px; background: linear-gradient(180deg, #bae6fd 0%, #7dd3fc 100%); border-radius: 20px; border: 3px solid #38bdf8; position: relative; display: flex; align-items: center; justify-content: flex-start; padding: 20px; transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);">
+            <div id="frog-character" style="font-size: 48px; filter: drop-shadow(0 6px 12px rgba(0,0,0,0.15)); transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); z-index: 5;">🐸</div>
+            <!-- 黃金荷葉目標 (固定在 flex-end) -->
+            <div id="lilypad-target" style="position: absolute; right: 20px; font-size: 52px; opacity: 0.85;">🪷</div>
+          </div>
+
+          <!-- 控制面板 -->
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div style="font-size: 14px; font-weight: 700; color: #14213D;">選擇 justify-content 屬性值：</div>
+            <button class="metal-btn" onclick="applyFlexJustify('flex-start')" style="text-align: left; font-family: monospace;">justify-content: flex-start;</button>
+            <button class="metal-btn" onclick="applyFlexJustify('center')" style="text-align: left; font-family: monospace;">justify-content: center;</button>
+            <button class="metal-btn" onclick="applyFlexJustify('flex-end')" style="text-align: left; font-family: monospace;">justify-content: flex-end; (靠右)</button>
+            <button class="metal-btn" onclick="applyFlexJustify('space-between')" style="text-align: left; font-family: monospace;">justify-content: space-between;</button>
+            <div id="game2-feedback" style="margin-top: 10px; font-size: 14px; font-weight: 700;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 遊戲三：代碼拆彈專家 (Debug) -->
+      <div id="game-stage-3" class="glass-panel" style="display: none; padding: 32px; max-width: 960px; margin: 0 auto;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <div>
+            <h3 style="font-size: 20px; font-weight: 700; color: #14213D;">💣 遊戲 3：代碼拆彈專家 (30秒極速除錯)</h3>
+            <p style="font-size: 13px; color: #64748B;">畫面中有語法錯誤 (Syntax Error)，點擊有問題的那一行立即拆彈剪線！</p>
+          </div>
+          <div style="display: flex; gap: 20px; align-items: center;">
+            <div style="font-size: 16px; font-weight: 700; color: #dc2626;">倒數：<span id="game3-timer">30</span> 秒</div>
+            <div style="font-size: 16px; font-weight: 700; color: #10B981;">拆彈數：<span id="game3-defused">0</span></div>
+          </div>
+        </div>
+
+        <div id="game3-bomb-container" style="background: #14213D; border-radius: 16px; padding: 24px; color: #47E6C1; font-family: 'JetBrains Mono', Consolas, monospace; display: flex; flex-direction: column; gap: 14px;">
+          <div class="code-line-target" onclick="clickDebugLine(1)" style="padding: 12px; background: rgba(255,255,255,0.06); border-radius: 8px; cursor: pointer; transition: background 0.2s;">
+            1: const totalScore = calculateScore(studentAnswers);
+          </div>
+          <div class="code-line-target" onclick="clickDebugLine(2)" style="padding: 12px; background: rgba(255,255,255,0.06); border-radius: 8px; cursor: pointer; transition: background 0.2s;">
+            2: &lt;div class="card"&gt;缺少結尾標籤 &lt;/di&gt;
+          </div>
+          <div class="code-line-target" onclick="clickDebugLine(3)" style="padding: 12px; background: rgba(255,255,255,0.06); border-radius: 8px; cursor: pointer; transition: background 0.2s;">
+            3: document.getElementById('exam').style.display = 'block';
+          </div>
+        </div>
+        <div id="game3-result-msg" style="margin-top: 16px; font-size: 15px; font-weight: 700; text-align: center;"></div>
+        <button class="metal-btn primary" onclick="startNewDebugRound()" style="margin-top: 16px;">換下一題除錯</button>
+      </div>
+
+      <!-- 遊戲四：色彩煉金術師 (Color) -->
+      <div id="game-stage-4" class="glass-panel" style="display: none; padding: 32px; max-width: 960px; margin: 0 auto;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <div>
+            <h3 style="font-size: 20px; font-weight: 700; color: #14213D;">🧪 遊戲 4：色彩煉金術師 (RGB 視覺比對)</h3>
+            <p style="font-size: 13px; color: #64748B;">調動三道光譜滑桿，讓你的調色燒杯與目標指定色相符（相似度達 90% 即過關）！</p>
+          </div>
+          <div id="game4-match-rate" style="font-size: 22px; font-weight: 800; color: #0D9488;">相似度: 0%</div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center;">
+          <!-- 雙燒杯對照區 -->
+          <div style="display: flex; gap: 20px; justify-content: center;">
+            <div style="text-align: center;">
+              <div style="font-size: 13px; font-weight: 700; margin-bottom: 8px; color: #14213D;">目標色 (#10B981)</div>
+              <div id="color-target-beaker" style="width: 140px; height: 160px; border-radius: 20px; background: #10B981; border: 4px solid #fff; box-shadow: 0 10px 25px rgba(0,0,0,0.12);"></div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 13px; font-weight: 700; margin-bottom: 8px; color: #14213D;">你的調色</div>
+              <div id="color-player-beaker" style="width: 140px; height: 160px; border-radius: 20px; background: rgb(128,128,128); border: 4px solid #fff; box-shadow: 0 10px 25px rgba(0,0,0,0.12); transition: background 0.1s ease;"></div>
+            </div>
+          </div>
+
+          <!-- RGB 滑桿 -->
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; color: #dc2626;">
+                <span>🔴 紅色 (Red)</span><span id="val-r">128</span>
+              </div>
+              <input type="range" id="slider-r" min="0" max="255" value="128" oninput="updateColorAlchemy()" style="width: 100%; accent-color: #dc2626;">
+            </div>
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; color: #16a34a;">
+                <span>🟢 綠色 (Green)</span><span id="val-g">128</span>
+              </div>
+              <input type="range" id="slider-g" min="0" max="255" value="128" oninput="updateColorAlchemy()" style="width: 100%; accent-color: #16a34a;">
+            </div>
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; color: #2563eb;">
+                <span>🔵 藍色 (Blue)</span><span id="val-b">128</span>
+              </div>
+              <input type="range" id="slider-b" min="0" max="255" value="128" oninput="updateColorAlchemy()" style="width: 100%; accent-color: #2563eb;">
+            </div>
+            <div id="game4-feedback" style="font-size: 14px; font-weight: 700; color: #0D9488;"></div>
+            <button class="metal-btn primary" onclick="generateNewAlchemyTarget()">換下一個神秘目標色</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 遊戲五：術科結構拼圖 (Layout) -->
+      <div id="game-stage-5" class="glass-panel" style="display: none; padding: 32px; max-width: 960px; margin: 0 auto;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <div>
+            <h3 style="font-size: 20px; font-weight: 700; color: #14213D;">🧩 遊戲 5：術科結構拼圖 (17300 標準版型)</h3>
+            <p style="font-size: 13px; color: #64748B;">點選區塊，拼出丙級術科題組一的標準版型架構 (上橫幅 1024x100、左選單 200x568、右主頁 824x568、下版權 1024x20)！</p>
+          </div>
+          <div id="game5-status-pill" class="tag-pill web" style="background:#eff6ff; color:#2563eb;">版型校驗中</div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px;">
+          <!-- 拼圖預覽畫布 (縮放展示) -->
+          <div id="layout-canvas-frame" style="width: 100%; height: 320px; background: #fff; border: 2px dashed #94a3b8; border-radius: 16px; padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <div id="slot-banner" style="height: 50px; background: #e2e8f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #64748b;">
+              上橫幅 Banner 槽位
+            </div>
+            <div style="flex: 1; display: grid; grid-template-columns: 160px 1fr; gap: 8px;">
+              <div id="slot-menu" style="background: #e2e8f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #64748b;">
+                左側選單 Menu
+              </div>
+              <div id="slot-content" style="background: #e2e8f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #64748b;">
+                主要內容 main
+              </div>
+            </div>
+            <div id="slot-footer" style="height: 30px; background: #e2e8f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #64748b;">
+              底部版權 footer
+            </div>
+          </div>
+
+          <!-- 拼圖片按鈕 -->
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="font-size: 13px; font-weight: 700; color: #14213D;">點擊填入對應區塊：</div>
+            <button class="metal-btn" onclick="fillLayoutSlot('banner')">➕ 填入【校園社團標題橫幅】</button>
+            <button class="metal-btn" onclick="fillLayoutSlot('menu')">➕ 填入【社團總覽垂直選單】</button>
+            <button class="metal-btn" onclick="fillLayoutSlot('content')">➕ 填入【iframe 主內容畫卷】</button>
+            <button class="metal-btn" onclick="fillLayoutSlot('footer')">➕ 填入【網頁維護與版權資訊】</button>
+            <button class="metal-btn primary" onclick="resetLayoutGame()" style="margin-top: 10px;">重置重拼</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 區塊 12: 極簡前端 CSS 庫產生器 (Component Forge) ================= -->
+    <section id="view-forge" style="display: none;">
+      <div style="margin-bottom: 28px; text-align: center;">
+        <span class="tag-pill web" style="background: rgba(255, 121, 92, 0.12); color: #FF795C; border-color: rgba(255, 121, 92, 0.3);">自造工坊 · 3 滑桿即時渲染</span>
+        <h2 style="font-size: 28px; font-weight: 800; margin: 8px 0; color: #14213D;">⚡ 極簡前端 CSS 庫產生器 (Component Forge)</h2>
+        <p style="font-size: 14px; color: #64748B;">拉動 3 根滑桿與勾選特效，0 延遲即時預覽，一鍵導出附帶繁體中文白話註解的純 CSS 代碼！</p>
+      </div>
+
+      <div class="glass-panel" style="padding: 36px; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 36px;">
+        <!-- 左側：拉霸滑桿與特效勾選 -->
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <h3 style="font-size: 18px; font-weight: 700; color: #14213D; border-left: 4px solid #FF795C; padding-left: 10px;">
+            1. 調整造型參數
+          </h3>
+
+          <!-- 滑桿 1: 圓角 -->
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px;">
+              <span>圓角半徑 (border-radius)</span>
+              <span id="forge-radius-val" style="color: #FF795C; font-weight: 700;">20px</span>
+            </div>
+            <input type="range" id="forge-radius-slider" min="0" max="50" value="20" oninput="updateForgeLivePreview()" style="width: 100%; accent-color: #FF795C;">
+          </div>
+
+          <!-- 滑桿 2: 陰影深度 -->
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px;">
+              <span>陰影深度 (box-shadow)</span>
+              <span id="forge-shadow-val" style="color: #0D9488; font-weight: 700;">16px</span>
+            </div>
+            <input type="range" id="forge-shadow-slider" min="0" max="40" value="16" oninput="updateForgeLivePreview()" style="width: 100%; accent-color: #0D9488;">
+          </div>
+
+          <!-- 滑桿 3: 彈簧感 -->
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 6px;">
+              <span>彈簧回彈感 (Spring Transition)</span>
+              <span id="forge-spring-val" style="color: #8B5CF6; font-weight: 700;">0.4s</span>
+            </div>
+            <input type="range" id="forge-spring-slider" min="1" max="10" value="4" oninput="updateForgeLivePreview()" style="width: 100%; accent-color: #8B5CF6;">
+          </div>
+
+          <!-- 特效 Checkboxes -->
+          <div style="border-top: 1px dashed #cbd5e1; padding-top: 16px; display: flex; flex-direction: column; gap: 10px;">
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; cursor: pointer;">
+              <input type="checkbox" id="forge-check-blur" onchange="updateForgeLivePreview()" checked style="width: 18px; height: 18px; accent-color: #0D9488;">
+              ✨ 啟用冰透毛玻璃 (backdrop-filter: blur)
+            </label>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; cursor: pointer;">
+              <input type="checkbox" id="forge-check-hover" onchange="updateForgeLivePreview()" checked style="width: 18px; height: 18px; accent-color: #FF795C;">
+              🚀 啟用懸浮上浮動態 (:hover translateY)
+            </label>
+          </div>
+        </div>
+
+        <!-- 右側：即時渲染沙盒與一鍵導出代碼 -->
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <h3 style="font-size: 18px; font-weight: 700; color: #14213D; border-left: 4px solid #0D9488; padding-left: 10px;">
+            2. 即時渲染沙盒 (Live Sandbox)
+          </h3>
+
+          <!-- 沙盒主體 -->
+          <div style="background: #F7F4EA; border-radius: 20px; padding: 40px; display: flex; align-items: center; justify-content: center; min-height: 200px;">
+            <div id="forge-preview-target" style="background: rgba(255, 255, 255, 0.85); border: 1px solid rgba(20, 33, 61, 0.1); border-radius: 20px; padding: 24px 32px; text-align: center; cursor: pointer; transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);">
+              <div style="font-size: 28px; margin-bottom: 6px;">💎</div>
+              <h4 style="font-size: 17px; font-weight: 800; color: #14213D;">CodeSolv Card</h4>
+              <p style="font-size: 12px; color: #64748B; margin-top: 4px;">移動滑鼠至此處體驗彈簧回饋</p>
+            </div>
+          </div>
+
+          <!-- 導出代碼區 -->
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span style="font-size: 13px; font-weight: 700; color: #14213D;">CSS 原始碼 (含繁中白話註解)：</span>
+              <button class="metal-btn primary" onclick="copyForgeCode()" style="padding: 4px 12px; font-size: 12px;">📋 一鍵複製代碼</button>
+            </div>
+            <pre id="forge-code-box" style="background: #14213D; color: #47E6C1; padding: 16px; border-radius: 12px; font-family: 'JetBrains Mono', Consolas, monospace; font-size: 12px; line-height: 1.6; max-height: 180px; overflow-y: auto; white-space: pre-wrap;"></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ================= 教師後台公告與廣播發布獨立彈窗 (含狀態保留與多媒體附件) ================= -->
@@ -1306,6 +1635,129 @@
   </div>
 
   <script src="app.js"></script>
+  <script src="codesolv-modules.js"></script>
+
+
+  <!-- ================= 教師端三步驟出題管理獨立彈窗 (Teacher 3-Step Wizard) ================= -->
+  <div id="teacher-wizard-modal" style="display: none; position: fixed; inset: 0; background: rgba(20, 33, 61, 0.55); backdrop-filter: blur(12px); z-index: 10000; align-items: center; justify-content: center;">
+    <div class="glass-panel" style="width: 92%; max-width: 720px; max-height: 90vh; overflow-y: auto; padding: 36px; background: rgba(255, 255, 255, 0.98); border: 1px solid rgba(255, 255, 255, 0.95); box-shadow: 0 25px 50px -12px rgba(20, 33, 61, 0.25); border-radius: 28px;">
+      
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <span style="font-size: 28px;">🚀</span>
+          <div>
+            <h3 style="font-size: 22px; font-weight: 800; color: #14213D;">CodeSolv 教師出題管理導航</h3>
+            <div style="font-size: 13px; color: #64748B;">步驟化出題：班級管理 ➔ 建立考場 ➔ 細部派發</div>
+          </div>
+        </div>
+        <button class="metal-btn" onclick="closeTeacherWizardModal()" style="padding: 6px 12px; font-size: 14px; color: #64748b;">✕</button>
+      </div>
+
+      <!-- 三步驟進度狀態條 -->
+      <div style="display: flex; justify-content: space-between; position: relative; margin-bottom: 32px; padding: 0 40px;">
+        <div style="position: absolute; top: 18px; left: 60px; right: 60px; height: 3px; background: #e2e8f0; z-index: 1;">
+          <div id="t-wizard-progress" style="width: 0%; height: 100%; background: #10B981; transition: width 0.4s ease;"></div>
+        </div>
+        <div class="t-step-circle active" id="t-step-c1" style="position: relative; z-index: 2; width: 38px; height: 38px; border-radius: 50%; background: #10B981; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 15px;">1</div>
+        <div class="t-step-circle" id="t-step-c2" style="position: relative; z-index: 2; width: 38px; height: 38px; border-radius: 50%; background: #e2e8f0; color: #64748b; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 15px;">2</div>
+        <div class="t-step-circle" id="t-step-c3" style="position: relative; z-index: 2; width: 38px; height: 38px; border-radius: 50%; background: #e2e8f0; color: #64748b; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 15px;">3</div>
+      </div>
+
+      <!-- 步驟一：班級管理 (建立名冊與代碼) -->
+      <div id="t-step-panel-1">
+        <h4 style="font-size: 16px; font-weight: 700; color: #14213D; margin-bottom: 12px;">步驟一：班級管理 (建立名冊與代碼)</h4>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+          <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #64748B; margin-bottom: 6px;">班級名稱 *</label>
+            <input type="text" id="twiz-class-name" class="input-field" placeholder="例如：高二資訊甲班" value="高二資訊甲班">
+          </div>
+          <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #64748B; margin-bottom: 6px;">專屬班級代碼 (3英3數) *</label>
+            <input type="text" id="twiz-class-code" class="input-field" placeholder="例如：CLS999" value="CLS999" maxlength="6">
+          </div>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <label style="display: block; font-size: 13px; font-weight: 600; color: #64748B; margin-bottom: 6px;">學生名冊名單 (支援批次輸入姓名，以逗號或換行分隔) *</label>
+          <textarea id="twiz-student-list" class="input-field" rows="3" placeholder="例如：陳冠宇, 李志豪, 林書涵, 王佳穎, 張家豪">陳冠宇, 李志豪, 林書涵, 王佳穎, 張家豪</textarea>
+        </div>
+        <div style="display: flex; justify-content: flex-end;">
+          <button class="metal-btn primary" onclick="goToTeacherWizardStep(2)">下一步：建立考場 ➔</button>
+        </div>
+      </div>
+
+      <!-- 步驟二：建立考場 (題型設定，支援 17300 學/術科) -->
+      <div id="t-step-panel-2" style="display: none;">
+        <h4 style="font-size: 16px; font-weight: 700; color: #14213D; margin-bottom: 12px;">步驟二：建立考場 (題型與範圍設定)</h4>
+        <div style="margin-bottom: 16px;">
+          <label style="display: block; font-size: 13px; font-weight: 600; color: #64748B; margin-bottom: 6px;">考試名稱 *</label>
+          <input type="text" id="twiz-exam-title" class="input-field" placeholder="例如：第一次前端學科全範圍評估測驗" value="第一次前端學科全範圍評估測驗">
+        </div>
+        <div style="margin-bottom: 16px;">
+          <label style="display: block; font-size: 13px; font-weight: 600; color: #64748B; margin-bottom: 8px;">題庫來源 (可複選) *</label>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; cursor: pointer;">
+              <input type="checkbox" id="twiz-src-17300" checked style="accent-color: #10B981;"> 17300 網頁設計學科
+            </label>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; cursor: pointer;">
+              <input type="checkbox" id="twiz-src-90006" checked style="accent-color: #10B981;"> 90006 職業安全衛生
+            </label>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; cursor: pointer;">
+              <input type="checkbox" id="twiz-src-90007" checked style="accent-color: #10B981;"> 90007 工作倫理道德
+            </label>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; cursor: pointer;">
+              <input type="checkbox" id="twiz-src-90011" checked style="accent-color: #10B981;"> 90011 資訊安全共同科目
+            </label>
+          </div>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <label style="display: block; font-size: 13px; font-weight: 600; color: #64748B; margin-bottom: 8px;">題型配置 *</label>
+          <div style="display: flex; gap: 20px;">
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600;">
+              <input type="checkbox" checked disabled style="accent-color: #10B981;"> 單選題 (Single Choice)
+            </label>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600;">
+              <input type="checkbox" id="twiz-type-multi" style="accent-color: #10B981;"> 複選題 (Multiple Choice)
+            </label>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600;">
+              <input type="checkbox" id="twiz-type-debug" checked style="accent-color: #10B981;"> 包含 AI 代碼除錯情境題
+            </label>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <button class="metal-btn" onclick="goToTeacherWizardStep(1)">◂ 上一步</button>
+          <button class="metal-btn primary" onclick="goToTeacherWizardStep(3)">下一步：細部派發 ➔</button>
+        </div>
+      </div>
+
+      <!-- 步驟三：細部派發 (時段設定與指定名單免考勾選) -->
+      <div id="t-step-panel-3" style="display: none;">
+        <h4 style="font-size: 16px; font-weight: 700; color: #14213D; margin-bottom: 12px;">步驟三：細部派發 (考試時段與指定學生免試勾選)</h4>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+          <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #64748B; margin-bottom: 6px;">考試日期 *</label>
+            <input type="date" id="twiz-exam-date" class="input-field" value="2026-10-24">
+          </div>
+          <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #64748B; margin-bottom: 6px;">測驗時間 (分鐘) *</label>
+            <input type="number" id="twiz-duration" class="input-field" value="50" min="10" max="120">
+          </div>
+        </div>
+        <div style="margin-bottom: 20px;">
+          <label style="display: block; font-size: 13px; font-weight: 600; color: #64748B; margin-bottom: 8px;">應試學生名冊 (可單獨勾選免試/請假學生)：</label>
+          <div id="twiz-students-dispatch-list" style="max-height: 140px; overflow-y: auto; background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <!-- 自動渲染 -->
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <button class="metal-btn" onclick="goToTeacherWizardStep(2)">◂ 上一步</button>
+          <button class="metal-btn primary" onclick="finishTeacherDispatch()" style="background: linear-gradient(135deg, #10B981, #059669); color: #fff; padding: 12px 24px; font-weight: 800;">
+            🚀 一鍵完成出題並發派試卷！
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 </body>
 </html>
